@@ -14,34 +14,155 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&family=Poppins&display=swap"
         rel="stylesheet">
-        <style>
-            font-pop{
-                font-family: 'Poppins', sans-serif;
-            }
-            font-eb{
-                font-family: 'EB Garamond', serif;
-            }
-        </style>
-        <!-- Custom Color -->
-        <script>
-            tailwind.config = {
-              theme: {
+    <style>
+        font-pop {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        font-eb {
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
+    <!-- Custom Color -->
+    <script>
+        tailwind.config = {
+            theme: {
                 extend: {
-                  colors: {
-                    clifford: '#da373d',
-                  }
+                    colors: {
+                        'main-color': '#B68C5A',
+                        'black-color': '#E7E7E7',
+                    }
                 }
-              }
             }
-          </script>
-        <link rel="shortcut icon" href="images/business.png" type="png">
+        }
+    </script>
+    <link rel="shortcut icon" href="images/business.png" type="png">
     <title>My Legal Solution</title>
 </head>
 
 <body>
-    <header>
-
+    <header class="container mx-auto mt-12">
+        <!-- navbar section -->
+        <nav class=" lg:mx-32">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Services</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Cases</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Blog</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Contact Us </a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <img class="w-[44px] h-[45px]" src="images/business.png" alt="">
+                        <a class="btn btn-ghost lg:text-4xl">Justice</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Cases</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Blog</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Contact Us</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn w-[150px] lg:w-[200px] h-[64px] text-white font-font-pop text-small lg:text-lg rounded-lg font-semibold bg-main-color">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section class="mt-14">
+            <div class="hero lg:w-[1000px] lg:h-[550px] lg:mx-auto" style="background-image: url(images/banner.png);">
+                <div class="w-full h-full bg-gradient-to-t from-black/70 to-black/0"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-[550px]">
+                    <h1 class="mb-5 text-3xl lg:text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class=" flex gap-3 justify-center items-center">
+                        <input class="w-[200px] lg:w-[500px] h-[28px] lg:h-[64px] rounded-lg p-5 border-none outline-none" type="text" placeholder="Search your services">
+                        <input class="w-[100px] lg:w-[250px] h-[40px] lg:h-[64px] bg-main-color rounded-lg text-lg font-semibold text-white font-font-pop border-none" type="submit">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
+
     <main>
 
     </main>

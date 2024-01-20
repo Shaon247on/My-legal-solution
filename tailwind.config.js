@@ -2,7 +2,14 @@
 module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+            'font-eb': ['EB Garamond', 'serif'],
+            'font-pop': ['Poppins', 'sans-serif']
+        }
+      },
+
     },
     plugins: [],
+
   }
